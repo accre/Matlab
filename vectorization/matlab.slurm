@@ -8,4 +8,4 @@
 #SBATCH --output=matlab_job_slurm.out
 
 setpkgs -a matlab_r2015a
-matlab -nojvm < vectorization.m
+matlab -nodisplay -nosplash < vectorization.m
