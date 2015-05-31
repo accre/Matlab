@@ -1,5 +1,5 @@
 % surrounding a block of code with tic and toc
-% will time its execution and automatically output
+% will time its execution
 
 
 % non-vectorized code
