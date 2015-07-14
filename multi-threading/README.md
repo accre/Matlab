@@ -35,8 +35,10 @@ http://www.mathworks.com/discovery/matlab-multicore.html
 
 You can safely ignore the following message:
 
+```shell
 Warning: Function sort has the same name as a MATLAB builtin. We suggest you
 rename the function to avoid a potential name conflict.
+```
 
 This is a quirk with how the Matlab environment is set up on our
 cluster but this should not impact the performance (or results)
