@@ -10,8 +10,10 @@ Requesting more tasks in your SLURM script
 will result in this function running faster. For this
 example we see the following execution times:
 
-1 core: 324 seconds
-8 cores: 55 seconds
+Num. Cores  | Execution Time (secs)
+------------- | -------------
+1  | 324
+8  | 55
 
 but the tasks have to all be on the same node,
 so you should use the options:
