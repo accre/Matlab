@@ -1,8 +1,8 @@
 function [] = tests()
 
-    test_one(10000000);
-    test_two(2000);
-    test_three(2000);
+    test_one(2^23);
+    test_two(2^11);
+    test_three(2^11);
     
     
     

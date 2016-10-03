@@ -6,7 +6,6 @@
 #SBATCH --ntasks=1
 #SBATCH --time=00:10:00        # 10 minutes
 #SBATCH --mem=1G
-#SBATCH --output=matlab_job_slurm.out
 
 setpkgs -a matlab_r2016a
-matlab -nodisplay -nosplash < gpu_eg.m
+matlab -nodisplay -nosplash -nojvm < gpu_eg.m
