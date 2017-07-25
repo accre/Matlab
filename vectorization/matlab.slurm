@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --mail-user=vunetid@vanderbilt.edu
+#SBATCH --mail-user=<myemail@vanderbilt.edu>
 #SBATCH --mail-type=ALL
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -7,5 +7,6 @@
 #SBATCH --mem=500M
 #SBATCH --output=matlab_job_slurm.out
 
-setpkgs -a matlab_r2015a
+module load MATLAB   # Load the default version of Matlab from LMod
+
 matlab -nodisplay -nosplash < vectorization.m

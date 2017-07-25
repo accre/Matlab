@@ -1,6 +1,5 @@
 #!/bin/bash
-
-#SBATCH --mail-user=<vunetid>@vanderbilt.edu
+#SBATCH --mail-user=<myemail@vanderbilt.edu>
 #SBATCH --mail-type=ALL
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -8,6 +7,6 @@
 #SBATCH --time=00:10:00        # 10 minutes
 #SBATCH --mem=1G
 
-setpkgs -a matlab_r2016a
+module load MATLAB   # load the default version of MATLAB from LMod
 
 matlab -nodisplay -nosplash -nojvm < parfor_eg.m
